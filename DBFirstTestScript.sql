@@ -5,11 +5,13 @@
 USE [Master];
 GO
 CREATE DATABASE DatabaseFirstTestDB ON ( NAME = DBFirstData, 
+					/* Point to the directory wherer you want to store your db files */
 					FILENAME = 'D:\MSSQL Server Data\DBFirstTest.mdf',
 					SIZE = 10MB,
 					MAXSIZE = 50MB,
 					FILEGROWTH = 5MB )
 					LOG ON ( NAME = DBFirstLog,
+					/* Point to the directory wherer you want to store your db files */	
 					FILENAME = 'D:\MSSQL Server Data\DBFirstLog.ldf',
 					SIZE = 5MB,
 					MAXSIZE = 25MB,
